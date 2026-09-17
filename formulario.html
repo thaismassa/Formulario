@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+    <main>
+        <form action="obrigado.html">
+            
+            <header>
+                <h1 class="nav-brand">Formulário de Inscrição/cadastro</h1>
+            </header>
+
+            <fieldset>
+                <legend>1. Dados Pessoais</legend>
+
+                <div class="form-group">
+                    <label for="ctrl-name">Nome Completo*</label>
+                    <input type="text" name="name" id="ctrl-name" placeholder="Thais Massa de Jesus" minlength="10" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="ctrl-email">E-mail*</label>
+                    <input type="email" name="email" id="ctrl-email" placeholder="thais@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ctrl-telefone-whatsApp">Telefone/whatsapp</label>
+                    <input type="tel" name="Telefone/whatsapp" id="ctrl-telefone-whatsApp" placeholder="(11) 99999-9999" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ctrl-nascimento">Data de Nascimento*</label>
+                    <input type="date" name="Nascimento" id="ctrl-nascimento" max="2026-09-14" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ctrl-cpf">CPF*</label>
+                    <input type="text" name="cpf" id="ctrl-cpf" placeholder="000.000.000-00" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Preferências e Perfil</legend>
+
+                <div class="form-group">
+                    <label for="ctrl-area">Área de interesse*</label>
+                    <select name="desenvolvimento" id="ctrl-area" required>
+                        <option value="">Selecionar áreas de interesse</option>
+                        <option value="1">Front-end</option>
+                        <option value="Back-end">Back-end</option>
+                        <option value="full-stalk">Full-stack</option>
+                        <option value="desenvolvimento-mobile">Desenvolvimento Mobile</option>
+                        <option value="ciencia-de-dados">Ciência de Dados</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Nivel de Experiência</label>
+                    <div class="radio-group">
+                        <input type="radio" name="nivel" id="ctrl-iniciante" value="iniciante" checked required>
+                        <label for="ctrl-iniciante">Iniciante</label>
+                        
+                        <input type="radio" name="nivel" id="ctrl-intermediario" value="Intermediario" required>
+                        <label for="ctrl-intermediario">Intermediário</label>
+                        
+                        <input type="radio" name="nivel" id="ctrl-avancado" value="Avançado" required>
+                        <label for="ctrl-avancado">Avançado</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="ctrl-biografia-apresentação">Biografia/Apresentação</label>
+                    <textarea id="ctrl-biografia-apresentação" placeholder="Conte um pouco sobre suas Expectativas..."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Redes Sociais</legend>
+
+                <div class="form-group">
+                    <label for="ctrl-instagram">Instagram</label>
+                    <input type="url" name="instagram" id="ctrl-instagram" placeholder="https://instagram.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ctrl-github">GitHub</label>
+                    <input type="url" name="github" id="ctrl-github" placeholder="https://github.com" required>
+                </div>
+            </fieldset>
+
+            <div class="form-group checkbox-group">
+                <input type="checkbox" name="novidades" id="novidades">
+                <label for="novidades">Aceito receber novidades por e-mail</label>
+            </div>
+        
+            <div class="botoes-container">
+                <button type="submit">Concluir cadastro</button>
+                <button type="reset">Limpar</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
